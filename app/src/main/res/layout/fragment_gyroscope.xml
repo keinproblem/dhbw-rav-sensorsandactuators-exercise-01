@@ -11,10 +11,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.jjoe64.graphview.GraphView
-            android:id="@+id/graph"
+        <TextView
+            android:id="@+id/gyroName"
             android:layout_width="match_parent"
-            android:layout_height="300dp" />
+            android:layout_height="wrap_content"
+            android:text="Gyroscope" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:id="@+id/accGyro"
+            android:layout_height="200dip" />
 
         <LinearLayout
             android:layout_width="match_parent"

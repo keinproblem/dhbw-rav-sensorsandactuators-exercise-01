@@ -80,9 +80,9 @@ public class AccelerometerFragment extends Fragment implements SensorEventListen
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_accelerometer, container, false);
-        this.textViewX = view.findViewById(R.id.x);
-        this.textViewY = view.findViewById(R.id.y);
-        this.textViewZ = view.findViewById(R.id.z);
+        this.textViewX = view.findViewById(R.id.accX);
+        this.textViewY = view.findViewById(R.id.accY);
+        this.textViewZ = view.findViewById(R.id.accZ);
         return view;
     }
 

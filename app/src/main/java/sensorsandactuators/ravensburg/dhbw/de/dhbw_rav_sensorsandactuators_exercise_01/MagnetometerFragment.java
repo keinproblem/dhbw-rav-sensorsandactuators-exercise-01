@@ -52,8 +52,8 @@ public class MagnetometerFragment extends Fragment implements SensorEventListene
      * @return A new instance of fragment GyroscopeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static GyroscopeFragment newInstance(String param1, String param2) {
-        GyroscopeFragment fragment = new GyroscopeFragment();
+    public static MagnetometerFragment newInstance(String param1, String param2) {
+        MagnetometerFragment fragment = new MagnetometerFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -79,10 +79,10 @@ public class MagnetometerFragment extends Fragment implements SensorEventListene
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View view = inflater.inflate(R.layout.fragment_accelerometer, container, false);
-        this.textViewX = view.findViewById(R.id.x);
-        this.textViewY = view.findViewById(R.id.y);
-        this.textViewZ = view.findViewById(R.id.z);
+        final View view = inflater.inflate(R.layout.fragment_magnetometer, container, false);
+        this.textViewX = view.findViewById(R.id.magX);
+        this.textViewY = view.findViewById(R.id.magY);
+        this.textViewZ = view.findViewById(R.id.magZ);
         return view;
     }
 

@@ -9,10 +9,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity implements OnFragmentInteractionListener {
+    private static final String TAG = MainActivity.class.getSimpleName();
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -92,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
         @Override
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
+            Log.i(TAG, "Position: " + position);
             switch (position) {
                 case 0:
                     return AccelerometerFragment.newInstance("", "");
@@ -101,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
                 case 2:
                     return MagnetometerFragment.newInstance("", "");
                 default:
-                    return AccelerometerFragment.newInstance("", "");
+                    return null;
             }
         }
 
