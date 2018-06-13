@@ -1,5 +1,5 @@
 language: android
-sudo: false
+sudo: true
 script:
 - "./gradlew clean build"
 android:
