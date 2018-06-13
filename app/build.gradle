@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
+    buildToolsVersion "28.0.2"
     defaultConfig {
         applicationId "sensorsandactuators.ravensburg.dhbw.de.dhbw_rav_sensorsandactuators_exercise_01"
         minSdkVersion 16
